@@ -1,5 +1,7 @@
 #include <stdio.h>
-
+// git pull origin main --allow-unrelated-histories
+// esc + :wq
+// git pull origin main
 int main()
 {
     // read a file

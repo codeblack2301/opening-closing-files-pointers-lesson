@@ -1,0 +1,22 @@
+write files:
+
+FILE *ptr = fopen("index.txt","w");
+char text[] = "random stuff";
+
+fprintf("ptr","%s",text);
+
+
+fclose(ptr);
+-----------------
+
+read files:
+
+FILE *ptr = fopen("index.txt","r");
+
+char text[1024] = {0};
+
+while(fgets(text, sizeof(text),ptr)){
+    printf("%s",text);
+}
+
+fclose(ptr);
